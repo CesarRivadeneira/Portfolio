@@ -379,9 +379,7 @@ section {
 .facts {
   padding-bottom: 30px;
 }
-
-
-.facts h2 {
+.container h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -389,45 +387,92 @@ section {
   position: relative;
   color: #173b6c;
 }
-
-.facts h2::after {
+.container h2::after {
   content: "";
   position: absolute;
   display: block;
   width: 50px;
   height: 3px;
   background: #149ddd;
-  bottom: 0;
+  bottom: 50;
   left: 0;
 }
+.tecnologias-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+.tecnologias-container {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+  animation: scrollTecnologias 20s linear infinite;
+}
 
-
-.facts button{
-  background: #149ddd;
-  border: 0;
-  width: 200px;
-  height: 60px;
-  margin: 10px;
-  padding: 10px 20px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 8px;
-  cursor: auto;
+@keyframes scrollTecnologias {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* ajustá según la cantidad de elementos */
+  }
 }
 
 
-.facts button:hover {
-  background: #37b3ed;
+.tecnologia {
+  width: 100px;
+  height: 110px; /* más alto para incluir el texto */
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  flex-shrink: 0;
+}
+.tecnologia p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+.tecnologia p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+.tecnologia:hover {
+  background: #ffffff00;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05) rotateZ(1deg); /* efecto tilt + agrande */
+}
+.tecnologia:hover img {
+  transform: scale(1.25);
+}
+
+.tecnologia img {
+  max-width: 120%;
+  max-height: 1200%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
-
-  .facts button {
-    width: 150px;
-    height: 50px;
+  .tecnologia {
+    width: 80px;
+    height: 80px;
   }
-
 }
+
+
 
 /*--------------------------------------------------------------
 # Resume

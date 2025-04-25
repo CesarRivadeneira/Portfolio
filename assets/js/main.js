@@ -137,6 +137,18 @@
     });
   }
 
+/*** Bloquear teclas de captura de pantalla***/
+document.addEventListener("keydown", function (e) {
+  if (e.key === "PrintScreen") {
+      navigator.clipboard.writeText('');
+      alert("Captura de pantalla deshabilitada.");
+  }
+
+  if (e.ctrlKey && (e.key === "s" || e.key === "S")) {
+      e.preventDefault();
+      alert("Descarga deshabilitada.");
+  }
+});
 
   /**
    * Porfolio isotope and filter
