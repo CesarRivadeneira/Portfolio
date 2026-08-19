@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#e4edf9"/>
-  <rect x="0" y="0" width="1200" height="8" fill="#149ddd"/>
-  <text x="600" y="330" font-family="Raleway, Arial, sans-serif" font-size="36" fill="#173b6c" text-anchor="middle" font-weight="600">Captura de pantalla</text>
-  <text x="600" y="380" font-family="Raleway, Arial, sans-serif" font-size="22" fill="#6f7180" text-anchor="middle">Registro de Paradas</text>
-  <text x="600" y="430" font-family="Raleway, Arial, sans-serif" font-size="16" fill="#a8a9b4" text-anchor="middle">Imagen pendiente</text>
-</svg>
