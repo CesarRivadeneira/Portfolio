@@ -159,28 +159,29 @@
           <h2>Sistema de Gestion de Mantenimiento - Registro de Paradas</h2>
 
           <div class="portfolio-section">
-            <h3>Caso de uso / Necesidad del cliente</h3>
-            <p>Surge de una necesidad observada en mi trabajo actual: descontrol en los tiempos de paradas, falta de registros y de seguimiento de las paradas de linea/equipo en planta.</p>
+            <h3>Problema / Necesidad</h3>
+            <p>La idea surgió a partir de una problemática que observé directamente en mi entorno de trabajo: <strong>falta de trazabilidad sobre las paradas de línea y equipo, registros incompletos y dificultad para analizar cuánto tiempo se pierde y cuáles son las fallas que más impactan en la producción</strong>. La información existía, pero estaba dispersa y no permitía obtener indicadores confiables para tomar decisiones.</p>
           </div>
 
           <div class="portfolio-section">
-            <h3>Qué se implementó</h3>
-            <p>App Streamlit (SQLAlchemy/PostgreSQL/Altair) con registro jerarquico Sector-Linea-Equipo, dashboard de KPIs MTTR/MTBF (modo 24/7 o 24/5), historial con exportacion a Excel, roles con permisos granulares y autenticacion PBKDF2. Inicia ademas el trabajo bajo metodologias agiles con tarjetas de mantenimiento: los usuarios solicitan mejoras o reparaciones que se pueden agendar, aceptar, rechazar o postergar, mejorando la eficiencia del trabajo tecnico.</p>
+            <h3>Mi rol</h3>
+            <p>En este proyecto asumí el proceso de punta a punta: <strong>identificación del problema, análisis del proceso actual, definición de requerimientos, diseño de la solución, desarrollo e implementación</strong>. Partí de las necesidades reales de técnicos, operarios y supervisores para definir qué información debía registrarse y cómo debía organizarse. A partir de ese análisis diseñé una estructura jerárquica <strong>Sector → Línea → Equipo</strong>, los distintos roles y permisos, el flujo de solicitudes de mantenimiento y los indicadores necesarios para evaluar el desempeño del área. El objetivo no fue solamente digitalizar un registro, sino <strong>transformar información operativa en datos útiles para analizar problemas, priorizar tareas y mejorar la gestión del mantenimiento</strong>.</p>
           </div>
-          <p>
-            Aplicacion web para el registro y seguimiento de paradas de linea/equipo en planta fabril, con KPIs de
-            MTTR/MTBF por sector, linea y equipo. Permite seleccion jerarquica Sector - Linea - Equipo con hora de
-            inicio, duracion, falla, accion correctiva y repuesto; edicion de paradas propias (tecnico/operario) o de
-            cualquier parada (admin/supervisor); dashboard con tarjetas de metricas globales, top 10 peores MTTR/MTBF
-            por linea, evolucion mensual y filtros por periodo y modo operativo (24/7 o 24/5).
-          </p>
-          <p>
-            Incluye historial con exportacion a Excel, solicitudes de reparacion con workflow
-            (pendiente - programada - realizada / rechazada), gestion de maestros (sectores, lineas, equipos,
-            repuestos y usuarios) y roles con permisos granulares (Admin, Supervisor, Tecnico, Operario y Produccion).
-            La autenticacion utiliza PBKDF2 con hash y sal, con credenciales auto-generadas. Desplegado en Streamlit
-            Cloud con base de datos PostgreSQL en Neon.
-          </p>
+
+          <div class="portfolio-section">
+            <h3>Solución</h3>
+            <p>Desarrollé una aplicación web para registrar y realizar el seguimiento de las paradas de línea y equipo, incorporando indicadores <strong>MTTR y MTBF</strong>, filtros por sector, línea, equipo y período, historial de eventos y exportación de información. También incorporé un sistema de solicitudes de reparación con workflow <strong>Pendiente → Programada → Realizada / Rechazada</strong>, permitiendo comenzar a estructurar una metodología de trabajo basada en la planificación y seguimiento de las tareas de mantenimiento. El sistema contempla diferentes perfiles —Admin, Supervisor, Técnico, Operario y Producción— con permisos específicos según las responsabilidades de cada usuario.</p>
+          </div>
+
+          <div class="portfolio-section">
+            <h3>Tecnologías</h3>
+            <p><strong>Python · Streamlit · PostgreSQL · SQLAlchemy · Altair · Neon · PBKDF2</strong></p>
+          </div>
+
+          <div class="portfolio-section">
+            <h3>Evolución</h3>
+            <p>Este proyecto representa una de las primeras aplicaciones donde busqué aplicar tecnología sobre un problema real de mi experiencia profesional. Más allá del desarrollo de la aplicación, el proyecto me permitió trabajar sobre <strong>relevamiento de necesidades, análisis de procesos, definición de requerimientos, diseño de flujos y toma de decisiones orientadas al usuario</strong>. Mi objetivo es continuar evolucionándolo hacia una herramienta integral de gestión del mantenimiento, incorporando nuevas metodologías de trabajo, automatización de procesos y análisis de datos para la toma de decisiones.</p>
+          </div>
         </div>
       </div>
 

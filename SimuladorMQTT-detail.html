@@ -128,29 +128,29 @@
           <h2>Simulador MQTT para Sistemas de Dosificacion Industrial</h2>
 
           <div class="portfolio-section">
-            <h3>Caso de uso / Necesidad del cliente</h3>
-            <p>Probar e integrar un sistema de monitoreo IoT para equipos dosificadores que estaran instalados en campo, lejos de la civilizacion, comunicando via PLC/gateways definidos por el cliente, sin disponer del hardware fisico durante la etapa de desarrollo (concepto de "probar antes de invertir").</p>
+            <h3>Problema / Necesidad</h3>
+            <p>La empresa necesitaba integrar un sistema de monitoreo IoT para equipos dosificadores que estarán instalados en campo, lejos de la civilización, comunicando vía PLC/gateways definidos por el cliente. El hardware físico no estaba disponible durante el desarrollo, por lo que era imposible probar la comunicación real antes de invertir en equipamiento. Había que validar la arquitectura MQTT y el comportamiento de los tópicos sin contar con los dispositivos.</p>
           </div>
 
           <div class="portfolio-section">
-            <h3>Qué se implementó</h3>
-            <p>Simulador en Python/Streamlit que emula dosificadores A/B publicando topicos MQTT reales (caudal, sensores, pulsos, nivel) con modos manual y autonomo, publicacion en paralelo y comunicacion TLS. Actualmente en funcionamiento, trabajado en conjunto con una app de monitoreo proxima a produccion y preventa de la empresa solicitante. Proxima etapa: pruebas fisicas reales con equipos Exemys, Purs, Phoenix.</p>
+            <h3>Mi rol</h3>
+            <p>Diseñé y desarrollé un simulador que emula el comportamiento de los dosificadores y se comunica como si fueran los equipos reales. Definí los tópicos MQTT, los modos de funcionamiento y los escenarios de prueba, trabajando en conjunto con la aplicación de monitoreo que consume esos datos.</p>
           </div>
-          <p>
-            SOIA Simulador MQTT es una aplicacion que permite emular el comportamiento de equipos dosificadores
-            industriales, generando y publicando datos reales de proceso a traves del protocolo MQTT. El objetivo
-            principal es probar e integrar sistemas de monitoreo, control y visualizacion sin necesidad de hardware
-            fisico, bajo el concepto de "probar antes de invertir", ahorrando tiempo y costos en la etapa de desarrollo
-            y validacion de proyectos industriales.
-          </p>
-          <p>
-            La aplicacion cuenta con dos modos de operacion: Manual, que permite forzar valores y senales a voluntad
-            (caudal, nivel, estado de sensores, SPM de cada dosificador), y Autonomo, que genera senales naturales de
-            proceso con variaciones suaves y comportamiento realista. Publica en paralelo los dosificadores A y B,
-            actualizando al instante el topico <em>stat/active_doser</em> al cambiar entre ellos. El proyecto fue
-            desarrollado con asistencia de IA aplicando co-creacion iterativa, logrando una aplicacion funcional y
-            estable en pocas iteraciones.
-          </p>
+
+          <div class="portfolio-section">
+            <h3>Solución</h3>
+            <p>Un simulador en Python/Streamlit que emula dosificadores A/B publicando tópicos MQTT reales —caudal, sensores, pulsos y nivel— con modos manual y autónomo, publicación en paralelo y comunicación TLS. Está actualmente en funcionamiento, integrado a una app de monitoreo próxima a producción y preventa de la empresa solicitante. El concepto central: "probar antes de invertir".</p>
+          </div>
+
+          <div class="portfolio-section">
+            <h3>Tecnologías</h3>
+            <p>Python · Streamlit · MQTT · TLS · Publicación en paralelo</p>
+          </div>
+
+          <div class="portfolio-section">
+            <h3>Evolución</h3>
+            <p>El proyecto me dio experiencia real en IoT industrial y protocolos de comunicación. La próxima etapa son las pruebas físicas con equipamiento real —Exemys, Purs, Phoenix— para validar la solución en el terreno donde se instalará. Demuestra cómo se puede construir y probar software complejo antes de que exista el hardware.</p>
+          </div>
         </div>
       </div>
 
