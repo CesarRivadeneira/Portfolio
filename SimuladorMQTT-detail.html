@@ -126,6 +126,16 @@
         </div>
         <div class="portfolio-description">
           <h2>Simulador MQTT para Sistemas de Dosificacion Industrial</h2>
+
+          <div class="portfolio-section">
+            <h3>Caso de uso / Necesidad del cliente</h3>
+            <p>Probar e integrar un sistema de monitoreo IoT para equipos dosificadores que estaran instalados en campo, lejos de la civilizacion, comunicando via PLC/gateways definidos por el cliente, sin disponer del hardware fisico durante la etapa de desarrollo (concepto de "probar antes de invertir").</p>
+          </div>
+
+          <div class="portfolio-section">
+            <h3>Qué se implementó</h3>
+            <p>Simulador en Python/Streamlit que emula dosificadores A/B publicando topicos MQTT reales (caudal, sensores, pulsos, nivel) con modos manual y autonomo, publicacion en paralelo y comunicacion TLS. Actualmente en funcionamiento, trabajado en conjunto con una app de monitoreo proxima a produccion y preventa de la empresa solicitante. Proxima etapa: pruebas fisicas reales con equipos Exemys, Purs, Phoenix.</p>
+          </div>
           <p>
             SOIA Simulador MQTT es una aplicacion que permite emular el comportamiento de equipos dosificadores
             industriales, generando y publicando datos reales de proceso a traves del protocolo MQTT. El objetivo

@@ -728,6 +728,37 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+.portfolio-details .portfolio-description .portfolio-section {
+  margin-bottom: 20px;
+  padding: 18px 22px;
+  border-left: 3px solid #149ddd;
+  background: #f9fbfe;
+  border-radius: 8px;
+}
+
+.portfolio-details .portfolio-description .portfolio-section h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #173b6c;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.portfolio-details .portfolio-description .portfolio-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #149ddd;
+}
+
+.portfolio-details .portfolio-description .portfolio-section p {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Contacto Section
 --------------------------------------------------------------*/
