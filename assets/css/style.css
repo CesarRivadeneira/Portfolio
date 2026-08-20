@@ -564,6 +564,8 @@ section {
 .portfolio .portfolio-wrap .portfolio-image-link img {
   transition: transform 0.5s ease;
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-image-link img {
@@ -628,6 +630,8 @@ section {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .portfolio-details .portfolio-details-slider .portfolio-detail-img {
