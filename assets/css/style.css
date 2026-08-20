@@ -237,6 +237,7 @@ h6 {
   height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/imagen\ hero.jpg");
   background-size: cover;
+  background-position: right center;
   background-color: gra rgba(0, 0, 0, 0.1);
 }
 
@@ -592,6 +593,15 @@ section {
   opacity: 1;
 }
 
+/* En dispositivos sin hover (tactiles) el overlay queda visible para
+   poder acceder al boton "Ver proyecto" */
+@media (hover: none) {
+  .portfolio .portfolio-wrap .portfolio-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(4, 11, 20, 0.97), rgba(4, 11, 20, 0.82));
+  }
+}
+
 .portfolio .portfolio-wrap .portfolio-overlay h3 {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -609,9 +619,9 @@ section {
   gap: 8px;
   background: #149ddd;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 10px 24px;
+  padding: 13px 30px;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
